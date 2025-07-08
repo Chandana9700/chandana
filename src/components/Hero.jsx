@@ -1,28 +1,30 @@
+// Hero.jsx
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import profilePic from '../assets/your-photo.png'; // Replace with your image path
-import resumePDF from '../assets/your-resume.pdf'; // Replace with your resume path
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import profilePic from '../assets/your-photo.png'; // ✅ Your actual image
+import resumeFile from '../assets/Chandana_Resume.pdf';
 
 export default function Hero() {
   return (
-    <section className="bg-[#0a192f] text-white px-6 md:px-16 py-24 min-h-[80vh] flex flex-col md:flex-row items-center justify-between gap-12">
-      {/* Left Content */}
-      <div className="md:w-1/2">
-        <p className="text-green-400 text-lg">Hi, my name is</p>
-        <h1 className="text-5xl font-bold mt-2">Chandana</h1>
-        <h2 className="text-2xl font-light text-gray-300 mb-4">Software Developer</h2>
-        <p className="text-gray-400 max-w-md mb-6">
-          Results-oriented developer with experience in embedded systems, Flutter apps,
-          and AI-powered job tools. I love turning ideas into scalable software.
+    <section className="px-6 md:px-16 py-20 bg-[#0a192f] text-gray-200 min-h-screen flex flex-col-reverse md:flex-row items-center gap-12">
+      
+      {/* Text Section */}
+      <div className="md:w-1/2 space-y-6">
+        <p className="text-green-400 text-xl">Hi, my name is</p>
+        <h1 className="text-5xl font-extrabold text-white">Chandana</h1>
+        <h2 className="text-2xl text-gray-400">Software Developer</h2>
+        <p className="text-lg leading-relaxed">
+          Results-oriented developer with experience in embedded systems, Flutter apps, and AI-powered job tools.
+          I love turning ideas into scalable software.
         </p>
 
-        {/* Social Links */}
-        <div className="flex items-center gap-5 mb-6">
+        {/* Social Icons */}
+        <div className="flex items-center gap-4 text-xl">
           <a
-            href="linkedin.com/in/chandana-rajashekhar-855214217"
+            href="https://www.linkedin.com/in/chandana-rajashekhar-855214217"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 text-xl"
+            className="text-blue-400 hover:text-blue-300"
           >
             <FaLinkedin />
           </a>
@@ -30,7 +32,7 @@ export default function Hero() {
             href="https://github.com/Chandana9700"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-white text-xl"
+            className="hover:text-gray-300"
           >
             <FaGithub />
           </a>
@@ -38,15 +40,15 @@ export default function Hero() {
 
         {/* Resume Download */}
         <a
-          href={resumePDF}
+          href={resumeFile}
           download="Chandana_Resume.pdf"
-          className="inline-block bg-green-500 text-[#0a192f] px-5 py-2 rounded-lg font-semibold hover:bg-green-400 transition"
+          className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg mt-4 transition"
         >
           Download Resume
         </a>
       </div>
 
-      {/* Right Profile Image */}
+      {/* Profile Image */}
       <div className="md:w-1/2 flex justify-center">
         <img
           src={profilePic}
