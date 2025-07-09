@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Text Section */}
       <div className="md:w-1/2 space-y-6">
         <p className="text-green-400 text-xl">Hi, my name is</p>
-        <h1 className="text-5xl font-extrabold text-white">Chandana</h1>
+        <h1 className="text-5xl font-extrabold text-white">Chandana Rajashekhar</h1>
         <h2 className="text-2xl text-gray-400">Software Developer</h2>
         <p className="text-lg leading-relaxed">
           Results-oriented developer with experience in embedded systems, Flutter apps, and AI-powered job tools.

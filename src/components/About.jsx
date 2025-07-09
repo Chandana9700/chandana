@@ -10,7 +10,7 @@ export default function About() {
         {/* Text Section */}
         <div className="md:w-1/2 space-y-5">
           <p className="text-lg leading-relaxed">
-            I'm <span className="text-green-400 font-medium">Chandana Rajashekhar</span>, a graduate student in Computer Science at
+            I'm <span className="text-green-400 font-medium">Chandana Rajashekhar</span>, a Graduate student in Artificial Intelligence at
             Saint Louis University with hands-on experience in <strong>embedded systems</strong>, <strong>cloud platforms</strong>, and 
             <strong> mobile/web development</strong>.
           </p>
